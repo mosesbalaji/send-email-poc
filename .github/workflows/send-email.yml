@@ -23,7 +23,7 @@ jobs:
           # Required recipients' addresses:
           to: pradipta.chatterjee98@gmail.com
           # Required sender full name (address can be skipped):
-          from: Pradipta
+          from: pradipta.chatterjee96@gmail.com
           # Optional whether this connection use TLS (default is true if server_port is 465)
           secure: true
           # Optional plain body:
