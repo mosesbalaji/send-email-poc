@@ -26,13 +26,6 @@ jobs:
           from: pradipta.chatterjee96@gmail.com
           # Optional whether this connection use TLS (default is true if server_port is 465)
           secure: true
-          # Optional plain body:
-          body: Hi Suripa! 
-                
-                Email has been triggered successfully,
-                
-                Regards,
-                SCB DevOps Team
           #Optional HTML Body
           html_body: |
               <!DOCTYPE html>
