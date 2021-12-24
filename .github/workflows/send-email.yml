@@ -33,6 +33,15 @@ jobs:
                 
                 Regards,
                 SCB DevOps Team
+          #Optional HTML Body
+          html_body: |
+              <!DOCTYPE html>
+              <html>
+              <body>
+              <h1>Heading</h1>
+              <p>Paragraph</p>
+              </body>
+              </html>
           # Optional carbon copy recipients:
           cc: pradipta.chatterjee98@gmail.com
           # Optional blind carbon copy recipients:
