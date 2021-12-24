@@ -23,7 +23,7 @@ jobs:
           # Required recipients' addresses:
           to: suripa.saha111@gmail.com, chatterjee.pradipta@tcs.com
           # Required sender full name (address can be skipped):
-          from: pradipta.chatterjee96@gmail.com
+          from: pradipta.chatterjee98@gmail.com
           # Optional whether this connection use TLS (default is true if server_port is 465)
           secure: true
           
@@ -50,7 +50,7 @@ jobs:
               </body>
               </html>
           # Optional carbon copy recipients:
-          cc: pradipta.chatterjee98@gmail.com
+          cc: pradipta.chatterjee96@gmail.com
           # Optional blind carbon copy recipients:
           ignore_cert: true
           # Optional converting Markdown to HTML (set content_type to text/html too):
