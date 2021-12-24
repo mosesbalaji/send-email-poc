@@ -21,7 +21,7 @@ jobs:
           # Required mail subject:
           subject: Test Email trigger by github actions
           # Required recipients' addresses:
-          to: suripa.saha111@gmail.com
+          to: suripa.saha111@gmail.com, chatterjee.pradipta@tcs.com
           # Required sender full name (address can be skipped):
           from: pradipta.chatterjee96@gmail.com
           # Optional whether this connection use TLS (default is true if server_port is 465)
@@ -38,8 +38,14 @@ jobs:
               <!DOCTYPE html>
               <html>
               <body>
-              <h1>Heading</h1>
-              <p>Paragraph</p>
+              <h1 style="color: green">Welcome to Standard Charterd Bank !!</h1>
+              <p style="font-family:'Courier New'">Hi User,
+              <br>
+              <br> You have been successfully Onboarded.
+              <br>
+              <br>Regards,
+              <br>TCS - SCB DevOps Team
+              </p>
               </body>
               </html>
           # Optional carbon copy recipients:
