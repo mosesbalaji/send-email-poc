@@ -12,7 +12,7 @@ jobs:
     
     steps:
       - name: Send mail
-        uses: mosesbalaji/myaction@v1.9
+        uses: mosesbalaji/myaction@v2.0
         with:
           # Required mail server address:
           server_address: smtp.gmail.com
