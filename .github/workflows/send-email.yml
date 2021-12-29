@@ -1,3 +1,7 @@
+# This is a basic workflow to help you get started with Actions
+
+# Controls when the workflow will run
+
 name : CI
 
 on : push
@@ -8,7 +12,7 @@ jobs:
     
     steps:
       - name: Send mail
-        uses: dawidd6/action-send-mail@v3
+        uses: mosesbalaji/myaction@v1.9
         with:
           # Required mail server address:
           server_address: smtp.gmail.com
@@ -21,39 +25,16 @@ jobs:
           # Required mail subject:
           subject: Test Email trigger by github actions
           # Required recipients' addresses:
-          to: suripa.saha111@gmail.com, chatterjee.pradipta@tcs.com, ankit.rathore@tcs.com
+          to: suripa.saha111@gmail.com
           # Required sender full name (address can be skipped):
-          from: pradipta.chatterjee98@gmail.com
+          from: Pradipta
           # Optional whether this connection use TLS (default is true if server_port is 465)
           secure: true
-          
           # Optional plain body:
-          body: Hi Suripa! 
-                
-                Email has been triggered successfully,
-                
-                Regards,
-                SCB DevOps Team
-          #Optional HTML Body
-          html_body: |
-              <!DOCTYPE html>
-              <html>
-              <body>
-              <h1 style="color: green">Welcome to Standard Charterd Bank !!</h1>
-              <p style="font-family:'Courier New'">Hi User,
-              <br>
-              <br> You have been successfully Onboarded.
-              <br>
-              <br>Regards,
-              <br>TCS - SCB DevOps Team
-              </p>
-              </body>
-              </html>
+          body: Hi Suripa! Email has been triggered successfully,
           # Optional carbon copy recipients:
-          cc: pradipta.chatterjee96@gmail.com
+          cc: pradipta.chatterjee98@gmail.com
           # Optional blind carbon copy recipients:
           ignore_cert: true
           # Optional converting Markdown to HTML (set content_type to text/html too):
           convert_markdown: true
-      
-      
