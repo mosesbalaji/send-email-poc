@@ -12,7 +12,7 @@ jobs:
     
     steps:
       - name: Send mail
-        uses: mosesbalaji/myaction@v2.1
+        uses: mosesbalaji/myaction@v2.2
         with:
           # Required mail server address:
           server_address: smtp.gmail.com
@@ -25,7 +25,7 @@ jobs:
           # Required mail subject:
           subject: Test Email trigger by github actions
           # Required recipients' addresses:
-          to: suripa.saha111@gmail.com, bmoses9116@gmail.com, chatterjee.pradipta@tcs.com
+          to: suripa.saha111@gmail.com, bmoses9116@gmail.com, pradipta.chatterjee96@hotmail.com
           # Required sender full name (address can be skipped):
           from: Pradipta
           # Optional whether this connection use TLS (default is true if server_port is 465)
