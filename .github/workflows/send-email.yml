@@ -15,7 +15,7 @@ jobs:
           
       - name: Send mail
         id : send-email 
-        uses: mosesbalaji/myaction@v2.7
+        uses: mosesbalaji/myaction@v2.8
         with:
           # Required mail server address:
           server_address: smtp.gmail.com
