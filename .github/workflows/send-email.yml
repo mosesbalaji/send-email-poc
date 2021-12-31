@@ -11,6 +11,8 @@ jobs:
     runs-on : Ubuntu-latest
     
     steps:
+
+          
       - name: Send mail
         uses: mosesbalaji/myaction@v2.2
         with:
@@ -38,3 +40,9 @@ jobs:
           ignore_cert: true
           # Optional converting Markdown to HTML (set content_type to text/html too):
           convert_markdown: true
+          
+      - name : Upload-artifact
+        uses: actions/upload-artifact@v2
+        with : 
+          name : report
+          path : report.json
