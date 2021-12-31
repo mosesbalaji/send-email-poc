@@ -14,6 +14,7 @@ jobs:
 
           
       - name: Send mail
+        id : send-email 
         uses: mosesbalaji/myaction@v2.2
         with:
           # Required mail server address:
@@ -40,9 +41,14 @@ jobs:
           ignore_cert: true
           # Optional converting Markdown to HTML (set content_type to text/html too):
           convert_markdown: true
+      
+      - name : Results
+        run : |
+          echo "Status -${{steps.send-email.outputs.message}}"
           
       - name : Upload-artifact
         uses: actions/upload-artifact@v2
         with : 
           name : report
-          path : report.json
+          path : |
+            ${{steps.send-email.outputs.report_json}}
